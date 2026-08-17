@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<preset version="15">
+   <type>image</type>
+   <comment>PNG 8-bit Export for ComfyUI Integration</comment>
+   <video>
+      <fileType>Png</fileType>
+      <codec>268496</codec>
+      <codecProfile></codecProfile>
+      <namePattern>&lt;name&gt;</namePattern>
+      <includeAlpha>False</includeAlpha>
+      <resize>
+         <resizeType>fit</resizeType>
+         <resizeFilter>lanczos</resizeFilter>
+         <width>0</width>
+         <height>0</height>
+         <bitsPerChannel>8</bitsPerChannel>
+         <numChannels>3</numChannels>
+         <floatingPoint>False</floatingPoint>
+         <bigEndian>True</bigEndian>
+         <pixelRatio>1</pixelRatio>
+         <scanFormat>P</scanFormat>
+      </resize>
+   </video>
+   <name>
+      <framePadding>4</framePadding>
+      <startFrame>1</startFrame>
+      <frameIndex>0</frameIndex>
+   </name>
+</preset>

@@ -1,0 +1,8 @@
+{
+    "sammie_cmd": "/bin/bash",
+    "sammie_launcher": "__HOME__/Documents/Sammie-Roto-2/run_sammie.command",
+    "preset_path": "/opt/Autodesk/shared/python/EXPORT_JPEG_SAMMIE.xml",
+    "export_path_template": "__HOME__/Documents/Sammie-Roto-2/exports/{clip_name}",
+    "result_reel_name": "SammieRoto Results",
+    "file_wait_timeout": 120
+}

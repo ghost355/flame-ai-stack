@@ -1,0 +1,73 @@
+{
+  "1": {
+    "class_type": "FlameLoad",
+    "inputs": {
+      "auto_load_latest": true,
+      "folder": "",
+      "start_frame": 0,
+      "max_frames": -1,
+      "selection_index": "Last"
+    }
+  },
+  "2": {
+    "class_type": "CheckpointLoaderSimple",
+    "inputs": {
+      "ckpt_name": "sam3.1_multiplex_fp16.safetensors"
+    }
+  },
+  "3": {
+    "class_type": "CLIPTextEncode",
+    "inputs": {
+      "clip": ["2", 1],
+      "text": "human in the center"
+    }
+  },
+  "4": {
+    "class_type": "ImageFromBatch",
+    "inputs": {
+      "image": ["1", 0],
+      "batch_index": 0,
+      "length": 1
+    }
+  },
+  "5": {
+    "class_type": "SAM3_Detect",
+    "inputs": {
+      "model": ["2", 0],
+      "image": ["4", 0],
+      "conditioning": ["3", 0],
+      "threshold": 0.5,
+      "refine_iterations": 2,
+      "individual_masks": false
+    }
+  },
+  "6": {
+    "class_type": "MatAnyone2",
+    "inputs": {
+      "src_video": ["1", 0],
+      "mask_frame": 0,
+      "n_warmup": 10,
+      "foreground_MASK": ["5", 0],
+      "max_internal_size": -1,
+      "max_mem_frames": 5,
+      "use_long_term": false
+    }
+  },
+  "7": {
+    "class_type": "FlameSend",
+    "inputs": {
+      "images": ["6", 0],
+      "filename_prefix": "sam3_matanyone2_matte",
+      "file_type": "exr",
+      "bit_depth": "16",
+      "workflow_name": "",
+      "clip_name": "",
+      "return_dir": "",
+      "pipeline_result_path": "",
+      "exr_compression": "zip",
+      "jpg_quality": 100,
+      "colorspace": "linear",
+      "frame_padding": 4
+    }
+  }
+}

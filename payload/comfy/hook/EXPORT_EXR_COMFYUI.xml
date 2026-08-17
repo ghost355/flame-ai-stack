@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<preset version="15">
+   <type>image</type>
+   <comment>OpenEXR 16-bit fp Export for ComfyUI Integration</comment>
+   <video>
+      <fileType>OpenEXR</fileType>
+      <codec>661624</codec>
+      <codecProfile></codecProfile>
+      <namePattern>&lt;name&gt;</namePattern>
+      <compressionQuality>100</compressionQuality>
+      <transferCharacteristic>2</transferCharacteristic>
+      <publishLinked>0</publishLinked>
+      <resize>
+         <resizeType>fit</resizeType>
+         <resizeFilter>lanczos</resizeFilter>
+         <width>0</width>
+         <height>0</height>
+         <bitsPerChannel>16</bitsPerChannel>
+         <numChannels>3</numChannels>
+         <floatingPoint>1</floatingPoint>
+         <bigEndian>0</bigEndian>
+         <pixelRatio>1.000000</pixelRatio>
+         <scanFormat>P</scanFormat>
+      </resize>
+   </video>
+   <name>
+      <framePadding>4</framePadding>
+      <startFrame>1</startFrame>
+      <frameIndex>0</frameIndex>
+   </name>
+</preset>
