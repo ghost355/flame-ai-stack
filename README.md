@@ -150,6 +150,4 @@ Verify any installation with `./install.sh --check`.
 
 Отдельное спасибо **Gaspar Matheron** за **ComfyUI Integration for Flame** ([комьюнити-форум Autodesk Flame](https://forums.autodesk.com/t5/flame-family-forum/bd-p/22)) — его хук правого клика `comfy_integration.py` (v2.0) лёг в основу Flame-интеграции этого стека: меню «правый клик на клипе → ComfyUI → workflow», экспорт кадров и авто-импорт результата работают на его архитектуре.
 
-Также спасибо **Beakfx** за **BCE** ([Batch Comfy Extensions](https://github.com/Beakfx/BCE)) — его паттерн «интеграция ComfyUI прямо в Batch» послужил источником вдохновения для UX хуков этого стека.
-
 Модели и чекпоинты принадлежат их авторам; установщик лишь скачивает их по публичным ссылкам.
