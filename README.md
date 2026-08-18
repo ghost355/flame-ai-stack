@@ -134,5 +134,18 @@ configs generated per-user. Models for Sammie auto-download on first launch.
 Verify any installation with `./install.sh --check`.
 
 
+## Credits
+
+Этот стек собран на основе чужих наработок. Уважение и благодарность авторам:
+
+| Проект | Автор | Роль в стеке |
+|---|---|---|
+| **Sammie-Roto-2** | [Zarxrax](https://github.com/Zarxrax/Sammie-Roto-2) | десктопная AI-ротоскопия (SAM2, MatAnyone, VideoMaMa, MiniMax-Remover) + round-trip со Flame |
+| **ComfyUI** | [comfyanonymous](https://github.com/comfyanonymous/ComfyUI) | базовый движок Comfy-стека |
+| **SAM 3.1** | [princeton-vl](https://github.com/princeton-vl/SAM3) | сегментация по текстовому промпту (модель качается из зеркала [Comfy-Org/sam3.1](https://huggingface.co/Comfy-Org/sam3.1)) |
+| **MatAnyone** | [pq-yang](https://github.com/pq-yang/MatAnyone) | маттинг видео (объект по референсному кадру) |
+| **MatAnyone2** | [pq-yang](https://github.com/pq-yang/MatAnyone2) | следующее поколение маттинга |
+| **ComfyUI-MatAnyone** | [FuouM](https://github.com/FuouM/ComfyUI-MatAnyone) | обвязка MatAnyone под ComfyUI (патчена под MPS) |
+
 
 Модели и чекпоинты принадлежат их авторам; установщик лишь скачивает их по публичным ссылкам.
