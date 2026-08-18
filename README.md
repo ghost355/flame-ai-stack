@@ -147,5 +147,8 @@ Verify any installation with `./install.sh --check`.
 | **MatAnyone2** | [pq-yang](https://github.com/pq-yang/MatAnyone2) | следующее поколение маттинга |
 | **ComfyUI-MatAnyone** | [FuouM](https://github.com/FuouM/ComfyUI-MatAnyone) | обвязка MatAnyone под ComfyUI (патчена под MPS) |
 
+Отдельное спасибо **Gaspar Matheron** за **ComfyUI Integration for Flame** ([комьюнити-форум Autodesk Flame](https://forums.autodesk.com/t5/flame-family-forum/bd-p/22)) — его хук правого клика `comfy_integration.py` (v2.0) лёг в основу Flame-интеграции этого стека: меню «правый клик на клипе → ComfyUI → workflow», экспорт кадров и авто-импорт результата работают на его архитектуре.
+
+
 
 Модели и чекпоинты принадлежат их авторам; установщик лишь скачивает их по публичным ссылкам.
