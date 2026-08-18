@@ -57,7 +57,7 @@ cd flame-ai-stack
    - сортировка папок FlameLoad по времени, а не по имени
    - параметры `fps` и `colour_space` для ProRes
 4. **ComfyUI-MatAnyone** — клон на `87cbce3` + **MPS-патч**: `mat_anyone.py`/`mat_anyone2.py` и `src/` заменяются на версии с `_detect_device()` (cuda → mps → cpu). Без патча MatAnyone на Mac молча работает на CPU — в десятки раз медленнее.
-5. **Модели**: `sam3.1_multiplex_fp16.safetensors` (1.75GB, princeton-vl/SAM3.1) + `matanyone.pth`/`matanyone2.pth` (FuouM/MatAnyone)
+5. **Модели**: `sam3.1_multiplex_fp16.safetensors` (1.75GB, зеркало Comfy-Org/sam3.1) + `matanyone.pth`/`matanyone2.pth` (официальные релизы pq-yang/MatAnyone, pq-yang/MatAnyone2)
 6. **Workflow**: `SAM3_MatAnyone2_Matte.json` (API, в `flame_comfy_workflows/` — из него строятся пункты меню правого клика) + `_UI.json` (для просмотра в интерфейсе ComfyUI)
 7. **Flame-хуки** в `/opt/Autodesk/shared/python/comfy_integration/`: `comfy_integration.py`, `comfy_watcher.py`, 5 пресетов экспорта (формат v15, без предупреждений Flame)
 8. **Конфиг** `~/.flame_comfy_config.json` — генерируется из шаблона, пути подставляются под текущего пользователя
@@ -133,6 +133,7 @@ and **Sammie-Roto-2** (AI rotoscoping with Flame round-trip). Idempotent bash sc
 configs generated per-user. Models for Sammie auto-download on first launch.
 Verify any installation with `./install.sh --check`.
 
+---
 
 ## Credits
 
@@ -149,6 +150,6 @@ Verify any installation with `./install.sh --check`.
 
 Отдельное спасибо **Gaspar Matheron** за **ComfyUI Integration for Flame** ([комьюнити-форум Autodesk Flame](https://forums.autodesk.com/t5/flame-family-forum/bd-p/22)) — его хук правого клика `comfy_integration.py` (v2.0) лёг в основу Flame-интеграции этого стека: меню «правый клик на клипе → ComfyUI → workflow», экспорт кадров и авто-импорт результата работают на его архитектуре.
 
-
+Также спасибо **Beakfx** за **BCE** ([Batch Comfy Extensions](https://github.com/Beakfx/BCE)) — его паттерн «интеграция ComfyUI прямо в Batch» послужил источником вдохновения для UX хуков этого стека.
 
 Модели и чекпоинты принадлежат их авторам; установщик лишь скачивает их по публичным ссылкам.

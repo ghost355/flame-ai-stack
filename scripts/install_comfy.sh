@@ -64,6 +64,16 @@ if ! "$VENV_PY" -c "import av" 2>/dev/null; then
     "$VENV_PY" -m pip install av
 fi
 
+# omegaconf + opencv — нужны ComfyUI-MatAnyone (их нет в requirements ноды)
+if ! "$VENV_PY" -c "import omegaconf" 2>/dev/null; then
+    log "Устанавливаю omegaconf (нужен MatAnyone)..."
+    "$VENV_PY" -m pip install omegaconf
+fi
+if ! "$VENV_PY" -c "import cv2" 2>/dev/null; then
+    log "Устанавливаю opencv-python (нужен MatAnyone)..."
+    "$VENV_PY" -m pip install opencv-python
+fi
+
 ok "venv готов. OpenEXR: $("$VENV_PY" -c "import OpenEXR; print(OpenEXR.__version__)" 2>/dev/null || echo нет), av: $("$VENV_PY" -c "import av; print(av.__version__)" 2>/dev/null || echo нет)"
 
 # --- 3. Custom nodes -------------------------------------------------------

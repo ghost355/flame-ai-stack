@@ -80,11 +80,11 @@ COMFYUI_REF="${COMFYUI_REF:-0d8b7510}"          # v0.25.0-31-g0d8b7510
 MATANYONE_REF="${MATANYONE_REF:-87cbce3}"       # "publish from cli test"
 SAMMIE_TAG="${SAMMIE_TAG:-v2.3.3}"
 
-# Model URLs (from INSTALL_RU.md / FuouM repo / princeton-vl).
-URL_MATANYONE1="https://huggingface.co/FuouM/MatAnyone/resolve/main/matanyone.pth"
-URL_MATANYONE2="https://huggingface.co/FuouM/MatAnyone/resolve/main/matanyone2.pth"
-URL_SAM31="https://huggingface.co/princeton-vl/SAM3.1/resolve/main/sam3.1_multiplex_fp16.safetensors"
-URL_SAMMIE_ZIP="https://github.com/Zarxrax/Sammie-Roto-2/releases/download/${SAMMIE_TAG}/Sammie-Roto-2.${SAMMIE_TAG#v}.zip"
+# Model URLs (verified 2026-08-18; upstream princeton-vl/FuouM dead: 401/404)
+URL_MATANYONE1="https://github.com/pq-yang/MatAnyone/releases/download/v1.0.0/matanyone.pth"
+URL_MATANYONE2="https://github.com/pq-yang/MatAnyone2/releases/download/v1.0.0/matanyone2.pth"
+URL_SAM31="https://huggingface.co/Comfy-Org/sam3.1/resolve/main/checkpoints/sam3.1_multiplex_fp16.safetensors"
+URL_SAMMIE_ZIP="https://github.com/Zarxrax/Sammie-Roto-2/releases/download/v2.3.3/Sammie-Roto-2.3.3.zip"
 
 # --- helpers ---------------------------------------------------------------
 
