@@ -134,6 +134,5 @@ configs generated per-user. Models for Sammie auto-download on first launch.
 Verify any installation with `./install.sh --check`.
 
 
-Отдельное спасибо **Beakfx** за **BCE** ([Batch Comfy Extensions](https://github.com/Beakfx/BCE)) — его паттерн «интеграция ComfyUI прямо в Batch» послужил источником вдохновения для архитектуры Flame-хуков этого стека.
 
 Модели и чекпоинты принадлежат их авторам; установщик лишь скачивает их по публичным ссылкам.
