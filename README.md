@@ -113,6 +113,13 @@ cd flame-ai-stack
 | Нет пункта меню ComfyUI в правом клике | Flame запущен до установки хука → перезапустить Flame |
 | Всё стоит, но что-то не работает | `./install.sh --check` — покажет, чего не хватает |
 
+## Резервные адреса моделей 
+Модель	   URL
+SAM3.1	   https://huggingface.co/Comfy-Org/sam3.1/resolve/main/checkpoints/sam3.1_multiplex_fp16.safetensors
+MatAnyone2	https://github.com/pq-yang/MatAnyone2/releases/download/v1.0.0/matanyone2.pth
+MatAnyone1	https://github.com/pq-yang/MatAnyone/releases/download/v1.0.0/matanyone.pth
+ComfyUI-MatAnyone (коммит)	https://github.com/FuouM/ComfyUI-MatAnyone/commit/87cbce3
+
 ---
 
 ## English summary
